@@ -520,6 +520,50 @@ h3 {
   border-top: 4px solid var(--accent);
 }
 
+.sample-links {
+  grid-column: 1 / -1;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--soft-shadow);
+}
+
+.sample-links h3 {
+  margin-bottom: 8px;
+}
+
+.sample-links p {
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.sample-links ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sample-links a {
+  display: block;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--navy);
+  background: var(--soft-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sample-links a:hover {
+  border-color: var(--blue);
+  background: var(--light-blue);
+}
+
 .faq-list {
   display: grid;
   gap: 12px;
@@ -688,6 +732,10 @@ h3 {
   .summary-grid,
   .two-column,
   .two-column--wide {
+    grid-template-columns: 1fr;
+  }
+
+  .sample-links ul {
     grid-template-columns: 1fr;
   }
 
