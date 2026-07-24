@@ -671,13 +671,15 @@ h3 {
 }
 
 .deadline {
-  display: inline-flex;
+  display: inline-block;
   margin-bottom: 10px;
-  padding: 7px 13px;
-  border-radius: 999px;
+  padding: 10px 16px;
+  border-radius: 20px;
   color: var(--navy);
   background: var(--paper);
   font-weight: 900;
+  line-height: 1.7;
+  text-align: left;
 }
 
 .apply-box .deadline {
